@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct Results:Decodable {
+    let articles: [Post]
+}
+
+struct Post: Decodable, Identifiable {
+    var id: String {
+        return publishedAt
+    }
+    let publishedAt: String
+    let description: String
+    let title: String
+    let url: String?
+}

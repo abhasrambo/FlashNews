@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		4EC8C4F524723C330067BE3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C4F424723C330067BE3B /* AppDelegate.swift */; };
 		4EC8C4F724723C330067BE3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C4F624723C330067BE3B /* SceneDelegate.swift */; };
-		4EC8C4F924723C330067BE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C4F824723C330067BE3B /* ContentView.swift */; };
 		4EC8C4FB24723C360067BE3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8C4FA24723C360067BE3B /* Assets.xcassets */; };
 		4EC8C4FE24723C360067BE3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8C4FD24723C360067BE3B /* Preview Assets.xcassets */; };
 		4EC8C50124723C360067BE3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8C4FF24723C360067BE3B /* LaunchScreen.storyboard */; };
+		4EC8C50B24723CA80067BE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C50A24723CA80067BE3B /* ContentView.swift */; };
+		4EC8C50D24723CCB0067BE3B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C50C24723CCB0067BE3B /* DetailView.swift */; };
+		4EC8C50F24723CEB0067BE3B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C50E24723CEB0067BE3B /* WebView.swift */; };
+		4EC8C51124723D1E0067BE3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C51024723D1D0067BE3B /* NetworkManager.swift */; };
+		4EC8C51324723D380067BE3B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8C51224723D380067BE3B /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EC8C4F124723C330067BE3B /* FlashNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC8C4F424723C330067BE3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EC8C4F624723C330067BE3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EC8C4F824723C330067BE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EC8C4FA24723C360067BE3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC8C4FD24723C360067BE3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EC8C50024723C360067BE3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EC8C50224723C360067BE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC8C50A24723CA80067BE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4EC8C50C24723CCB0067BE3B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4EC8C50E24723CEB0067BE3B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4EC8C51024723D1D0067BE3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4EC8C51224723D380067BE3B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		4EC8C4F324723C330067BE3B /* FlashNews */ = {
 			isa = PBXGroup;
 			children = (
+				4EC8C50924723C6E0067BE3B /* View */,
+				4EC8C50824723C5F0067BE3B /* Model */,
 				4EC8C4F424723C330067BE3B /* AppDelegate.swift */,
 				4EC8C4F624723C330067BE3B /* SceneDelegate.swift */,
-				4EC8C4F824723C330067BE3B /* ContentView.swift */,
 				4EC8C4FA24723C360067BE3B /* Assets.xcassets */,
 				4EC8C4FF24723C360067BE3B /* LaunchScreen.storyboard */,
 				4EC8C50224723C360067BE3B /* Info.plist */,
@@ -73,6 +82,25 @@
 				4EC8C4FD24723C360067BE3B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4EC8C50824723C5F0067BE3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EC8C51024723D1D0067BE3B /* NetworkManager.swift */,
+				4EC8C51224723D380067BE3B /* PostData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EC8C50924723C6E0067BE3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EC8C50A24723CA80067BE3B /* ContentView.swift */,
+				4EC8C50C24723CCB0067BE3B /* DetailView.swift */,
+				4EC8C50E24723CEB0067BE3B /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC8C4F524723C330067BE3B /* AppDelegate.swift in Sources */,
+				4EC8C51324723D380067BE3B /* PostData.swift in Sources */,
 				4EC8C4F724723C330067BE3B /* SceneDelegate.swift in Sources */,
-				4EC8C4F924723C330067BE3B /* ContentView.swift in Sources */,
+				4EC8C50B24723CA80067BE3B /* ContentView.swift in Sources */,
+				4EC8C51124723D1E0067BE3B /* NetworkManager.swift in Sources */,
+				4EC8C50F24723CEB0067BE3B /* WebView.swift in Sources */,
+				4EC8C50D24723CCB0067BE3B /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +321,7 @@
 				DEVELOPMENT_TEAM = M8ZKPMAVGG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FlashNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +342,7 @@
 				DEVELOPMENT_TEAM = M8ZKPMAVGG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FlashNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

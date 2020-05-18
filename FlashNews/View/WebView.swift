@@ -6,16 +6,25 @@
 //  Copyright © 2020 Abhas Kumar. All rights reserved.
 //
 
+
+import Foundation
 import SwiftUI
+import WebKit
 
-struct WebView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct WebView_Previews: PreviewProvider {
-    static var previews: some View {
-        WebView()
-    }
+struct WebView: UIViewRepresentable{
+    let urlString: String?
+       
+       func makeUIView(context: Context) -> WKWebView {
+           return WKWebView()
+       }
+       
+       func updateUIView(_ uiView: WKWebView, context: Context) {
+           if let safeString = urlString {
+               if let url = URL(string: safeString) {
+                   let request = URLRequest(url: url)
+                   uiView.load(request)
+               }
+           }
+       }
+    
 }
